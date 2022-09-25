@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="9f68f43b-2598-43bd-bed4-3ccb0bac7b0c" data-root-id="2636"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="2778">
+          {"d01cae96-b6e5-4257-a246-3034ac1f7ea8":{"defs":[],"roots":{"references":[{"attributes":{"axis":{"id":"2646"},"coordinates":null,"grid_line_color":null,"group":null,"ticker":null},"id":"2648","type":"Grid"},{"attributes":{},"id":"2647","type":"CategoricalTicker"},{"attributes":{"below":[{"id":"2646"}],"center":[{"id":"2648"},{"id":"2652"}],"height":250,"left":[{"id":"2649"}],"renderers":[{"id":"2658"}],"title":{"id":"2637"},"toolbar":{"id":"2653"},"toolbar_location":null,"x_range":{"id":"2635"},"x_scale":{"id":"2642"},"y_range":{"id":"2660"},"y_scale":{"id":"2644"}},"id":"2636","subtype":"Figure","type":"Plot"},{"attributes":{"source":{"id":"2634"}},"id":"2659","type":"CDSView"},{"attributes":{"coordinates":null,"formatter":{"id":"2663"},"group":null,"major_label_policy":{"id":"2664"},"ticker":{"id":"2650"}},"id":"2649","type":"LinearAxis"},{"attributes":{},"id":"2667","type":"AllLabels"},{"attributes":{},"id":"2668","type":"UnionRenderers"},{"attributes":{},"id":"2642","type":"CategoricalScale"},{"attributes":{"fill_color":{"value":"#1f77b4"},"line_color":{"value":"#1f77b4"},"top":{"field":"counts"},"width":{"value":0.9},"x":{"field":"x"}},"id":"2655","type":"VBar"},{"attributes":{"axis":{"id":"2649"},"coordinates":null,"dimension":1,"group":null,"ticker":null},"id":"2652","type":"Grid"},{"attributes":{"end":0.7,"start":0.58},"id":"2660","type":"Range1d"},{"attributes":{},"id":"2650","type":"BasicTicker"},{"attributes":{},"id":"2644","type":"LinearScale"},{"attributes":{},"id":"2653","type":"Toolbar"},{"attributes":{"coordinates":null,"data_source":{"id":"2634"},"glyph":{"id":"2655"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"2657"},"nonselection_glyph":{"id":"2656"},"view":{"id":"2659"}},"id":"2658","type":"GlyphRenderer"},{"attributes":{},"id":"2669","type":"Selection"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"hatch_alpha":{"value":0.1},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"counts"},"width":{"value":0.9},"x":{"field":"x"}},"id":"2656","type":"VBar"},{"attributes":{},"id":"2663","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#1f77b4"},"hatch_alpha":{"value":0.2},"line_alpha":{"value":0.2},"line_color":{"value":"#1f77b4"},"top":{"field":"counts"},"width":{"value":0.9},"x":{"field":"x"}},"id":"2657","type":"VBar"},{"attributes":{"factors":[["car_insurance","GEL"],["vehicle_claims","GEL"],["car_insurance","Embedding"],["vehicle_claims","Embedding"],["car_insurance","Label"],["vehicle_claims","Label"],["car_insurance","One Hot"],["vehicle_claims","One Hot"]],"range_padding":0.05},"id":"2635","type":"FactorRange"},{"attributes":{"data":{"counts":[0.60328781,0.67116621,0.61119536,0.67249319,0.62033906,0.67672339,0.63585857,0.66970569],"x":[["car_insurance","GEL"],["vehicle_claims","GEL"],["car_insurance","Embedding"],["vehicle_claims","Embedding"],["car_insurance","Label"],["vehicle_claims","Label"],["car_insurance","One Hot"],["vehicle_claims","One Hot"]]},"selected":{"id":"2669"},"selection_policy":{"id":"2668"}},"id":"2634","type":"ColumnDataSource"},{"attributes":{},"id":"2664","type":"AllLabels"},{"attributes":{"coordinates":null,"group":null,"text":"F1 Score - Encodings"},"id":"2637","type":"Title"},{"attributes":{"coordinates":null,"formatter":{"id":"2666"},"group":null,"major_label_orientation":1,"major_label_policy":{"id":"2667"},"ticker":{"id":"2647"}},"id":"2646","type":"CategoricalAxis"},{"attributes":{},"id":"2666","type":"CategoricalTickFormatter"}],"root_ids":["2636"]},"title":"Bokeh Application","version":"2.4.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            const fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  const docs_json = document.getElementById('2778').textContent;
+                  const render_items = [{"docid":"d01cae96-b6e5-4257-a246-3034ac1f7ea8","root_ids":["2636"],"roots":{"2636":"9f68f43b-2598-43bd-bed4-3ccb0bac7b0c"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    let attempts = 0;
+                    const timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

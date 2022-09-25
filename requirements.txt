@@ -1,0 +1,10 @@
+numpy
+pandas
+torch
+qGEL
+scipy
+sklearn
+minisom
+pandas
+fastai
+tensorboard

@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="8a68db28-c616-48fd-8136-cdbfc4672024" data-root-id="3180"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="3322">
+          {"1dbf6922-3c4d-400f-939f-b72329d54e86":{"defs":[],"roots":{"references":[{"attributes":{},"id":"3197","type":"Toolbar"},{"attributes":{"factors":[["car_insurance","SOM"],["car_insurance","DAGMM"],["car_insurance","RSRAE"],["car_insurance","SOM-DAGMM"],["vehicle_claims","SOM"],["vehicle_claims","DAGMM"],["vehicle_claims","RSRAE"],["vehicle_claims","SOM-DAGMM"]],"range_padding":0.1},"id":"3179","type":"FactorRange"},{"attributes":{"axis":{"id":"3193"},"coordinates":null,"dimension":1,"group":null,"ticker":null},"id":"3196","type":"Grid"},{"attributes":{},"id":"3212","type":"UnionRenderers"},{"attributes":{},"id":"3188","type":"LinearScale"},{"attributes":{},"id":"3207","type":"BasicTickFormatter"},{"attributes":{"end":0.75,"start":0.58},"id":"3204","type":"Range1d"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#1f77b4"},"hatch_alpha":{"value":0.2},"line_alpha":{"value":0.2},"line_color":{"value":"#1f77b4"},"top":{"field":"counts"},"width":{"value":0.9},"x":{"field":"x"}},"id":"3201","type":"VBar"},{"attributes":{"coordinates":null,"data_source":{"id":"3178"},"glyph":{"id":"3199"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"3201"},"nonselection_glyph":{"id":"3200"},"view":{"id":"3203"}},"id":"3202","type":"GlyphRenderer"},{"attributes":{},"id":"3208","type":"AllLabels"},{"attributes":{"coordinates":null,"formatter":{"id":"3210"},"group":null,"major_label_orientation":1,"major_label_policy":{"id":"3211"},"ticker":{"id":"3191"}},"id":"3190","type":"CategoricalAxis"},{"attributes":{"fill_color":{"value":"#1f77b4"},"line_color":{"value":"#1f77b4"},"top":{"field":"counts"},"width":{"value":0.9},"x":{"field":"x"}},"id":"3199","type":"VBar"},{"attributes":{"coordinates":null,"group":null,"text":"F1 Score - Models "},"id":"3181","type":"Title"},{"attributes":{},"id":"3210","type":"CategoricalTickFormatter"},{"attributes":{"source":{"id":"3178"}},"id":"3203","type":"CDSView"},{"attributes":{},"id":"3191","type":"CategoricalTicker"},{"attributes":{"data":{"counts":[0.6189721,0.62548067,0.61624297,0.61128696,0.71287899,0.66630254,0.68922553,0.66203828],"x":[["car_insurance","SOM"],["car_insurance","DAGMM"],["car_insurance","RSRAE"],["car_insurance","SOM-DAGMM"],["vehicle_claims","SOM"],["vehicle_claims","DAGMM"],["vehicle_claims","RSRAE"],["vehicle_claims","SOM-DAGMM"]]},"selected":{"id":"3213"},"selection_policy":{"id":"3212"}},"id":"3178","type":"ColumnDataSource"},{"attributes":{"axis":{"id":"3190"},"coordinates":null,"grid_line_color":null,"group":null,"ticker":null},"id":"3192","type":"Grid"},{"attributes":{},"id":"3211","type":"AllLabels"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"hatch_alpha":{"value":0.1},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"counts"},"width":{"value":0.9},"x":{"field":"x"}},"id":"3200","type":"VBar"},{"attributes":{"below":[{"id":"3190"}],"center":[{"id":"3192"},{"id":"3196"}],"height":250,"left":[{"id":"3193"}],"renderers":[{"id":"3202"}],"title":{"id":"3181"},"toolbar":{"id":"3197"},"toolbar_location":null,"x_range":{"id":"3179"},"x_scale":{"id":"3186"},"y_range":{"id":"3204"},"y_scale":{"id":"3188"}},"id":"3180","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"3186","type":"CategoricalScale"},{"attributes":{},"id":"3213","type":"Selection"},{"attributes":{"coordinates":null,"formatter":{"id":"3207"},"group":null,"major_label_policy":{"id":"3208"},"ticker":{"id":"3194"}},"id":"3193","type":"LinearAxis"},{"attributes":{},"id":"3194","type":"BasicTicker"}],"root_ids":["3180"]},"title":"Bokeh Application","version":"2.4.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            const fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  const docs_json = document.getElementById('3322').textContent;
+                  const render_items = [{"docid":"1dbf6922-3c4d-400f-939f-b72329d54e86","root_ids":["3180"],"roots":{"3180":"8a68db28-c616-48fd-8136-cdbfc4672024"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    let attempts = 0;
+                    const timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
