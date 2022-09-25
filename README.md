@@ -1,12 +1,35 @@
-# Deep unsupervised anomaly detection with auditing data
+# Unsupervised anomaly detection for auditing data
 
 
 ## Datasets
 
+1) Vehicle Claim - Synthetic dataset created using DVI dataset.
 1) Car Insurance - Kaggle(https://www.kaggle.com/datasets/buntyshah/auto-insurance-claims-data)
-1) Insurance Claim Classification - Kaggle(https://www.kaggle.com/competitions/ml-classification1-2020/data?select=train.csv)
 1) Vehicle Insurance - Github(https://github.com/AnalyticsandDataOracleUserCommunity/MachineLearning)
-1) Vehicle Claim - Synthetic dataset generated for this thesis.
+
+## Vehicle Claim dataset
+
+- `Maker` - *Categorical* - The brand of the vehicle.
+- `GenModel` - *Categorical* - The model of the vehicle.
+- `Color` - *Categorical* - Colour of the vehicle.
+- `Reg_Year` - *Categorical* - Year of Registration.
+- `Body_Type` - *Categorical* - Eg. SUV, Convertible.
+- `Runned_Miles` - *Numerical* - Distance covered by the vehicle.
+- `Engin_Size` - *Categorical* - Size of engine.
+- `GearBox` - *Categorical* - Automatic, Manual.
+- `FuelType` - *Categorical* - Petrol, Diesel.
+- `Price` -  *Numerical* - Price of vehicle.
+- `Seat_num` - *Numerical* - Number of seats.
+- `Door_num` -  *Numerical* - Number of Doors.
+- `issue` - *Categorical* - Type of damage.
+- `issue_id` - *Categorical* - Specific damage.
+- `repair_complexity` - *Categorical* - Difficulty to repair the vehicle.
+- `repair_hours` -  *Numerical* - Time required to finish the job.
+- `repair_cost` - *Numerical* - Cost of repair.
+
+Other attributes are not used for evaluation in this work. 
+`breakdown_date` and `repair_date` were added with the idea of inserting anomalies based on the number of days required to repair the vehicle.
+
 
 ## Training
 
@@ -53,7 +76,10 @@
 
 ## References
 
-1) https://github.com/GuansongPang/ADRepository-Anomaly-detection-datasets
-1) https://github.com/GuansongPang/SOTA-Deep-Anomaly-Detection
-1) https://deepvisualmarketing.github.io/
-1) https://github.com/zhuyitan/IGTD
+1) DVI dataset - https://deepvisualmarketing.github.io/
+1) RSRAE - https://github.com/marrrcin/rsrlayer-pytorch
+1) DAGMM - https://github.com/RomainSabathe/dagmm
+1) SOM - https://github.com/JustGlowing/minisom
+1) NeuTraL-AD - https://github.com/boschresearch/NeuTraL-AD
+1) LOE - https://github.com/boschresearch/LatentOE-AD
+
