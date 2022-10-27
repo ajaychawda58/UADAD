@@ -1,4 +1,4 @@
-# Unsupervised anomaly detection for auditing data
+# Unsupervised Anomaly detection for Auditing Data and Impact of Cetgorical Encodings
 
 
 ## Datasets
@@ -85,3 +85,13 @@ Other attributes are not used for evaluation in this work.
 1) NeuTraL-AD - https://github.com/boschresearch/NeuTraL-AD
 1) LOE - https://github.com/boschresearch/LatentOE-AD
 
+
+Please consider citing our work if you found this repository to be helpful.
+```
+@article{
+    Author = {Ajay Chawda and Axel Vierling and Karsten Berns},
+    Title = {Unsupervised Anomaly detection for Auditing Data and Impact of Cetgorical Encodings},
+    Journal = {https://arxiv.org/abs/2210.14056},
+    Year = {2022},
+}
+```
