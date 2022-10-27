@@ -89,7 +89,7 @@ Other attributes are not used for evaluation in this work.
 Please consider citing our work if you found this repository to be helpful.
 ```
 @article{
-    Author = {Ajay Chawda and Axel Vierling and Karsten Berns},
+    Author = {Ajay Chawda and Stefanie Grimm and Marius Kloft},
     Title = {Unsupervised Anomaly detection for Auditing Data and Impact of Cetgorical Encodings},
     Journal = {https://arxiv.org/abs/2210.14056},
     Year = {2022},
