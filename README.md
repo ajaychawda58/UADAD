@@ -1,4 +1,4 @@
-# Unsupervised Anomaly detection for Auditing Data and Impact of Cetgorical Encodings
+# Unsupervised Anomaly detection for Auditing Data and Impact of Catgorical Encodings
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/unsupervised-anomaly-detection-for-auditing/unsupervised-anomaly-detection-on-vehicle)](https://paperswithcode.com/sota/unsupervised-anomaly-detection-on-vehicle?p=unsupervised-anomaly-detection-for-auditing)
 
 ## Datasets
