@@ -1,7 +1,9 @@
+This work has been accepted at Neurips 2022 workshop on Synthetic Data for Empowering ML Research.
+
 # Unsupervised Anomaly detection for Auditing Data and Impact of Catgorical Encodings
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/unsupervised-anomaly-detection-for-auditing/unsupervised-anomaly-detection-on-vehicle)](https://paperswithcode.com/sota/unsupervised-anomaly-detection-on-vehicle?p=unsupervised-anomaly-detection-for-auditing)
 
-This work has been accepted at Neurips 2022 workshop on Synthetic Data for Empowering ML Research.
+
 ## Datasets
 
 1) Vehicle Claim - Synthetic dataset created using DVI dataset.
